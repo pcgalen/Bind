@@ -1,0 +1,197 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Binder.master.cs" Inherits="Binder.Binder" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .FloatRight
+        {
+            float: right;
+        }
+        .FloatLeft
+        {
+            float: left;
+        }
+        .CenterObect
+        {
+            margin: 0px auto 0px auto;
+        }
+        .ulTopMenu
+        {
+            cursor: pointer;
+            font: bold 12px Arial, Helvetica, sans-serif;
+            margin: 0px;
+            padding: 10px 10px 0px 10px;
+            list-style: none;
+            z-index: 100;
+            width: 125px;
+            height: 15px;
+            background-color: Green;
+            color: white;
+            text-align: center;
+            float: left;
+        }
+        
+        .ulPadded
+        {
+            padding: 10px 10px 10px 10px;
+            text-align: left;
+        }
+        
+        #green-menu
+        {
+            height: 41px;
+            width: 900px;
+        }
+        .menubar 
+        {
+            width:890px;
+            background-color:Green;
+            background-image: url(images/menuback.png);
+            background-repeat: no-repeat;
+            overflow:hidden;
+        }
+        #green-menu ul
+        {
+            font: bold 12px Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            z-index: 100;
+        }
+        #green-menu ul li
+        {
+            display: block;
+            position: relative;
+            float: left;
+            z-index: 100;
+            border-right: 1px solid #ffffff;
+            margin: 0px;
+            top: 0px;
+            left: 0px;
+            width: 119px;
+        }
+        #green-menu li ul
+        {
+            display: none;
+        }
+        #green-menu ul li a
+        {
+            cursor: pointer;
+            display: block;
+            text-decoration: none;
+            color: #ffffff;
+            padding: 5px 9px 5px 9px;
+            margin-left: 1px;
+            white-space: nowrap;
+        }
+        #green-menu ul li a:hover
+        {
+            text-decoration: underline;
+        }
+        #green-menu li:hover ul, #green-menu li.iehover ul
+        {
+            cursor: pointer;
+            display: block;
+            position: absolute;
+            background: #118a43;
+            font: 12px Arial, Helvetica, sans-serif;
+            padding: 0;
+        }
+        #green-menu li:hover ul li, #green-menu li.iehover ul li
+        {
+            cursor: pointer;
+            border-bottom: 1px solid #ccc;
+        }
+        #green-menu li:hover li, #green-menu li.iehover li
+        {
+            float: none;
+        }
+        #green-menu li:hover li a:hover
+        {
+            background: #333;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        .inline
+        {
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="green-menu">
+        <table style="width: 900px; background-color: #FFFF99; color: Black; text-align: center;
+            margin: 0px auto 0px auto; border: 1px solid black">
+            <tr>
+                <td>
+                    <table style="width: 100%;">
+                        <tr>
+                            <td style="width: 25%;">
+                            </td>
+                            <td style="text-align: center; width: 50%;">
+                                <h1>
+                                    Binder</h1>
+                                Asp.net Bind Manager
+                            </td>
+                            <td style="vertical-align: bottom; text-align: right; width: 25%;">
+                                <br />
+                                <asp:Button ID="ActionButton" runat="server" Text="Logout" Width="75px" CssClass="FloatRight"
+                                    OnClick="ActionButton_Click" />
+                                <asp:Literal ID="UsernameLiteral" runat="server"></asp:Literal>
+                                &nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" style="text-align: left;">
+                                <div class="menubar">
+                                <ul class="ulTopMenu">
+                                    <li class="inline">Information</li>
+                                </ul>
+                                <ul class="ulTopMenu">
+                                    <li>Zones
+                                        <ul>
+                                            <li class="ulPadded"><a href="addzone.aspx">Add New Zone</a> </li>
+                                            <li class="ulPadded"><a href="editzone.aspx">Edit Zone</a></li>
+                                            <li class="ulPadded"><a href="deletezone.aspx">Delete Zone</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="ulTopMenu">
+                                    <li>Configuration</li>
+                                </ul>
+                                <ul class="ulTopMenu">
+                                    <li>Service
+                                    <ul>
+                                        <li class="ulPadded"><a id="StartServiceLink" runat="server" href="servicestart.aspx">
+                                            Start</a></li>
+                                        <li class="ulPadded"><a id="StopServiceLink" runat="server" href="servicestop.aspx">
+                                            Stop</a></li>
+                                        <li class="ulPadded"><a id="RestartServiceLink" runat="server" href="servicestart.aspx">
+                                            Restart</a></li>
+                                      </ul>
+                                    </li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <hr />
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
