@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="W:\Inet\Binder" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="bin/Binder.dll" publishTime="05/28/2013 06:59:44" />
+    <file relUrl="bin/Binder.pdb" publishTime="05/28/2013 06:59:44" />
+    <file relUrl="Binder.Master" publishTime="05/28/2013 06:22:22" />
+    <file relUrl="Web.config" publishTime="05/28/2013 06:43:36" />
+    <file relUrl="default.aspx" publishTime="05/27/2013 10:40:33" />
+    <file relUrl="images/menuback.png" publishTime="05/27/2013 09:34:51" />
+    <file relUrl="Configuration.aspx" publishTime="05/28/2013 05:49:16" />
+    <file relUrl="login.aspx" publishTime="05/27/2013 06:27:10" />
+  </publishProfile>
+</publishData>

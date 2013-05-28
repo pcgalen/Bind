@@ -127,7 +127,7 @@
     <form id="form1" runat="server">
     <div id="green-menu">
         <table style="width: 900px; background-color: #FFFF99; color: Black; text-align: center;
-            margin: 0px auto 0px auto; border: 1px solid black">
+            margin-left: auto; margin-right:auto; border: 1px solid black">
             <tr>
                 <td>
                     <table style="width: 100%;">
@@ -163,7 +163,7 @@
                                     </li>
                                 </ul>
                                 <ul class="ulTopMenu">
-                                    <li>Configuration</li>
+                                    <li><a href="Configuration.aspx">Configuration</a></li>
                                 </ul>
                                 <ul class="ulTopMenu">
                                     <li>Service

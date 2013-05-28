@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Web;
+using System.Web.Configuration;
 
 namespace Binder
 {
@@ -7,6 +8,17 @@ namespace Binder
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (WebConfigurationManager.AppSettings["Database"] == null)
+            {
+                Response.Write(Request.Path);
+                if (Request.Path != "/Configuration.aspx") 
+                {
+                    Response.Redirect("/Configuration.aspx", true);
+                }
+
+                return;
+            }
+
             if (Session["username"] != null)
             {
                 UsernameLiteral.Text = Session["username"].ToString();
