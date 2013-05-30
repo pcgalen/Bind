@@ -1,0 +1,5 @@
+Database,binder
+DatabaseServer,services
+DatabaseUser,binder
+DatabasePassword,/2o2Gp0Y3EsiQ2nV63YK5w==
+BindPath,C:\logs\Autoupdater.log

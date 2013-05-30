@@ -14,7 +14,7 @@
         Username:
         </td>
         <td style="text-align: left; width:50%">
-        <asp:TextBox ID="UserNameTextBox" runat="server" Width="150px"></asp:TextBox>
+        <asp:TextBox ID="UserNameTextBox" runat="server" Width="188px"></asp:TextBox>
         </td>
     </tr>
     <tr>
@@ -22,18 +22,23 @@
         Password:
         </td>
         <td style="text-align:left">
-        <asp:TextBox ID="PasswordTextBox" runat="server" TextMode="Password" Width="150px"></asp:TextBox>
+        <asp:TextBox ID="PasswordTextBox" runat="server" TextMode="Password" Width="188px"></asp:TextBox>
         </td>
     </tr>
     <tr>
         <td style="text-align: center;" colspan="2"><strong>Database</strong></td>
     </tr>
     <tr>
+        <td style="text-align: right;">Database Server:</td>
+        <td style="text-align: left"><asp:TextBox ID="DatabaseServerTextBox" runat="server" 
+                Width="188px" /></td>
+    </tr>
+    <tr>
         <td style="text-align:right;">
             Database:
         </td>
         <td style="text-align: left;">
-            <asp:TextBox ID="DatabaseTextBox" runat="server" Width="150px"></asp:TextBox>
+            <asp:TextBox ID="DatabaseTextBox" runat="server" Width="188px"></asp:TextBox>
         </td>
     </tr>
     <tr>
@@ -41,7 +46,7 @@
             UserID:
         </td>
         <td style="text-align: left;">
-            <asp:TextBox ID="DatabaseUserID" Runat="server" Width="150px"></asp:TextBox>
+            <asp:TextBox ID="DatabaseUserID" Runat="server" Width="188px"></asp:TextBox>
         </td>
     </tr>
     <tr>
@@ -49,7 +54,8 @@
             Password:
         </td>
         <td style="text-align: left;">
-            <asp:TextBox ID="DatabasePassword" runat="server" Width="150px" TextMode="Password"></asp:TextBox>
+            <asp:TextBox ID="DatabasePassword" runat="server" Width="188px" 
+                TextMode="Password"></asp:TextBox>
         </td>
     </tr>
     <tr>
@@ -60,12 +66,13 @@
             Path:
         </td>
         <td style="text-align: left;">
-            <asp:TextBox ID="BindPath" runat="server" Width="150px"></asp:TextBox>
+            <asp:TextBox ID="BindPath" runat="server" Width="180px"></asp:TextBox>
         </td>
     </tr>
     <tr>
         <td style="text-align:center" colspan="2">
-            <asp:Button ID="SubmitButton" Text="Submit" runat="server" />
+            <asp:Button ID="SubmitButton" Text="Submit" runat="server" 
+                onclick="SubmitButton_Click" />
         </td>
     </tr>
 </table>
