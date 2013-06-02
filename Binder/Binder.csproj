@@ -92,6 +92,7 @@
     <Compile Include="Configuration.aspx.designer.cs">
       <DependentUpon>Configuration.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DataLayer.cs" />
     <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
